@@ -1,0 +1,9 @@
+var rev = "fwd";
+function titlebar(t) {
+  var e = "Igor Guterres - Portifólio", i = t, r = (e = "" + e).length;
+  if ("fwd" == rev) i < r ? (i += 1, scroll = e.substr(0, i), document.title = scroll, timer = window.setTimeout("titlebar(" + i + ")", 100)) : (rev = "bwd", timer = window.setTimeout("titlebar(" + i + ")", 145)); else if (i > 0) {
+    var a = r - (i -= 1);
+    scroll = e.substr(a, r), document.title = scroll, timer = window.setTimeout("titlebar(" + i + ")", 100);
+  } else rev = "fwd", timer = window.setTimeout("titlebar(" + i + ")", 100);
+}
+titlebar(0);
