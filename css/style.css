@@ -1,10 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -14,7 +12,6 @@ body {
     line-height: 1.6;
     transition: background 0.3s, color 0.3s;
 }
-
 
 nav ul {
     display: flex;
@@ -55,7 +52,6 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-
 .social-icons {
     margin: 25px 0;
     display: flex;
@@ -73,7 +69,6 @@ nav ul li a:hover::after {
     color: #1e90ff;
     transform: scale(1.2);
 }
-
 
 .perfil {
     display: flex;
@@ -99,7 +94,6 @@ nav ul li a:hover::after {
 .perfil img:hover {
     transform: rotate(5deg) scale(1.05);
 }
-
 
 main {
     max-width: 900px;
@@ -127,7 +121,6 @@ section ul {
     font-size: 1rem;
 }
 
-
 #ti ul {
     padding-left: 25px;
     margin-bottom: 20px;
@@ -143,7 +136,6 @@ section ul {
     color: #fff;
     font-size: 1.2rem;
 }
-
 
 .portfolio-list {
     display: grid;
@@ -174,16 +166,37 @@ section ul {
 .project-card img {
     width: 100%;
     height: auto;
+    max-height: 200px; /* Adicionado: Limita altura para previews consistentes */
+    object-fit: cover; /* Adicionado: Mantém proporção sem distorção */
     border-radius: 6px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 15px;
-    
+}
+
+/* Adicionado: Fallback para imagens que não carregam - esconde a img quebrada e mostra um placeholder textual */
+.project-card img:not([src]),
+.project-card img[src=""] {
+    display: none;
 }
 
 .project-card img:hover {
     transform: scale(1.08);
     box-shadow: 0 4px 12px rgba(30, 144, 255, 0.4);
+}
+
+/* Adicionado: Placeholder para quando a imagem não carrega */
+.project-card::before {
+    content: attr(data-placeholder, "Projeto sem preview");
+    display: none;
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.project-card:has(img:not([src]))::before,
+.project-card:has(img[src=""])::before {
+    display: block;
 }
 
 .project-card a {
@@ -215,7 +228,6 @@ section ul {
     transform: scale(1.05);
 }
 
-
 footer {
     background: #1f1f1f;
     color: #fff;
@@ -224,7 +236,6 @@ footer {
     margin-top: 60px;
     border-top: 2px solid #1e90ff;
 }
-
 
 @media (max-width: 768px) {
     main {
@@ -239,5 +250,8 @@ footer {
     }
     .project-card {
         padding: 15px;
+    }
+    .project-card img {
+        max-height: 150px; /* Adicionado: Ajuste para mobile */
     }
 }
