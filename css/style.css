@@ -166,15 +166,15 @@ section ul {
 .project-card img {
     width: 100%;
     height: auto;
-    max-height: 200px; /* Adicionado: Limita altura para previews consistentes */
-    object-fit: cover; /* Adicionado: Mantém proporção sem distorção */
+    max-height: 200px; 
+    object-fit: cover; 
     border-radius: 6px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 15px;
 }
 
-/* Adicionado: Fallback para imagens que não carregam - esconde a img quebrada e mostra um placeholder textual */
+
 .project-card img:not([src]),
 .project-card img[src=""] {
     display: none;
@@ -185,7 +185,7 @@ section ul {
     box-shadow: 0 4px 12px rgba(30, 144, 255, 0.4);
 }
 
-/* Adicionado: Placeholder para quando a imagem não carrega */
+
 .project-card::before {
     content: attr(data-placeholder, "Projeto sem preview");
     display: none;
@@ -252,6 +252,7 @@ footer {
         padding: 15px;
     }
     .project-card img {
-        max-height: 150px; /* Adicionado: Ajuste para mobile */
+        max-height: 150px; 
     }
 }
+
