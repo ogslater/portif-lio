@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igor Guterres - Portfólio</title>
-    <link rel="icon" href="images/icon.png" type="image/png">
-    <meta property="og:image" content="images/icon.png">
-    <meta property="og:title" content="Igor Guterres - Portfólio">
-    <meta property="og:description" content="Portfólio de Igor Guterres, desenvolvedor Front-end.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="scripts/title.js"></script>
     <script src="scripts/blocker.js"></script>
 </head>
-
 <body>
     <header>
         <nav>
@@ -24,34 +21,31 @@
                 <li><a href="#portfolio">Portfólio</a></li>
             </ul>
         </nav>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/igorr_gut" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/ogslater" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://wa.me/5521991166548" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <div class="perfil">
+        <div class="perfil" data-aos="fade-up" data-aos-duration="1000">
             <img src="images/igor.png" alt="Foto de Igor Guterres">
             <h1>Igor Guterres</h1>
         </div>
     </header>
 
     <main>
-        <section id="sobre">
+        <section id="sobre" data-aos="fade-up" data-aos-duration="1000">
             <h2>Sobre Mim</h2>
-            <p>Me chamo Igor Guterres, tenho 20 anos e estou entrando na área de programação, com foco no Front-end. 
-            Comecei minha jornada em 2023 criando bots para o Discord, o que despertou minha paixão por resolver problemas com código. 
-            Em 2024, comecei a estudar conteúdos relacionados à programação web, como HTML, CSS e JavaScript. 
-            Desde então, tenho buscado expandir meus conhecimentos em soluções digitais, como Redes e Sistemas Operacionais, 
-            para futuramente poder trabalhar como Pentester, Especialista em Cibersegurança, Engenheiro de Segurança, entre outras áreas.</p>
+            <p>
+                Me chamo Igor Guterres, tenho 20 anos e estou entrando na área de programação, com foco no Front-end. 
+                Comecei minha jornada em 2023 criando bots para o Discord, o que despertou minha paixão por resolver problemas com código. 
+                Em 2024, comecei a estudar conteúdos relacionados à programação web, como HTML, CSS e JavaScript. 
+                Desde então, tenho buscado expandir meus conhecimentos em soluções digitais, como Redes e Sistemas Operacionais, 
+                para futuramente poder trabalhar como Pentester, Especialista em Cibersegurança, Engenheiro de Segurança, entre outras áreas.
+            </p>
         </section>
 
-        <section id="ti">
+        <section id="ti" data-aos="fade-up" data-aos-duration="1000">
             <h2>Currículo em TI</h2>
             <h3>Habilidades Técnicas:</h3>
             <ul>
-                <li><strong>Front-End:</strong> JavaScript, Animações JS, TypeScript, React.js</li>
-                <li><strong>Back-End:</strong> Python, Ruby</li>
-                <li><strong>Outras competências:</strong> Excel Básico, Marketing Digital, Cibersegurança Básica, Conhecimento Básico sobre Sistemas Operacionais e Redes de Computadores</li>
+                <li><strong>Front-End:</strong> JavaScript, Animações JS, TypeScript, Conhecimentos básicos em React.js e PHP</li>
+                <li><strong>Back-End:</strong> Conhecimentos básicos em Ruby e Python</li>
+                <li><strong>Outras competências:</strong> Marketing Digital, Conhecimento Intermediário sobre Cibersegurança e Redes de Computadores. Também tenho conhecimento Básico sobre Sistemas Operacionais e Excel.</li>
             </ul>
             <h3>Alguns dos cursos relacionados à TI que eu já fiz:</h3>
             <ul>
@@ -61,85 +55,157 @@
             </ul>
         </section>
 
-        <section id="interesses">
+        <section id="interesses" data-aos="fade-up" data-aos-duration="1000">
             <h2>Interesses Pessoais</h2>
-            <p>Além da programação, gosto muito de ouvir música e tenho interesse em expandir meu conhecimento em tecnologia, abrangendo a maior área possível. Também gosto de jogar, como por exemplo, Rainbow Six Siege e Warframe.</p>
+            <p>
+                Além da programação, gosto muito de ouvir música e tenho interesse em expandir meu conhecimento em tecnologia, abrangendo a maior área possível. Também gosto de jogar, como por exemplo, Rainbow Six Siege e Warframe.
+            </p>
         </section>
 
-        <section id="portfolio">
+        <section id="portfolio" data-aos="fade-up" data-aos-duration="1000">
             <h2>Portfólio</h2>
             <div class="portfolio-list">
-                <div class="project-card" data-placeholder="Cálculo de IMC">
-                    <a href="https://ogslater.github.io/CalculoIMC/" target="_blank">
-                        <img src="images/imc.png" alt="Cálculo de IMC">
-                    </a>
-                    <a href="https://ogslater.github.io/CalculoIMC/" target="_blank">Cálculo de IMC</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800">
+                    <img src="images/imc.png" alt="Cálculo de IMC">
+                    <h3>Cálculo de IMC</h3>
                     <p>Calculadora simples de IMC.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://ogslater.github.io/CalculoIMC/" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/ogslater/CalculoIMC" class="btn">Ver Código</a>
+                    </div>
                 </div>
-                <div class="project-card" data-placeholder="Conversão de Temperatura">
-                    <a href="https://ogslater.github.io/Temperatura/" target="_blank">
-                        <img src="images/temperatura.png" alt="Conversão de Temperatura">
-                    </a>
-                    <a href="https://ogslater.github.io/Temperatura/" target="_blank">Conversão de Temperatura</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                    <img src="images/temperatura.png" alt="Conversão de Temperatura">
+                    <h3>Conversão de Temperatura</h3>
                     <p>Conversor entre Celsius e Fahrenheit.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://ogslater.github.io/temperatura/" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/ogslater/temperatura" class="btn">Ver Código</a>
+                    </div>
                 </div>
-                <div class="project-card" data-placeholder="Cálculo de Formas Geométricas">
-                    <a href="https://ogslater.github.io/FormasG/" target="_blank">
-                        <img src="images/formasg.png" alt="Cálculo de Formas Geométricas">
-                    </a>
-                    <a href="https://ogslater.github.io/FormasG/" target="_blank">Cálculo de Formas Geométricas</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                    <img src="images/formasg.png" alt="Cálculo de Formas Geométricas">
+                    <h3>Cálculo de Formas Geométricas</h3>
                     <p>Cálculos de área e perímetro para formas geométricas.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://ogslater.github.io/FormasG/" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/ogslater/FormasG" class="btn">Ver Código</a>
+                    </div>
                 </div>
-                <div class="project-card" data-placeholder="Média e Situação do Aluno">
-                    <a href="https://ogslater.github.io/Boletim/" target="_blank">
-                        <img src="images/aluno.png" alt="Média e Situação do Aluno">
-                    </a>
-                    <a href="https://ogslater.github.io/Boletim/" target="_blank">Média e Situação do Aluno</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                    <img src="images/aluno.png" alt="Média e Situação do Aluno">
+                    <h3>Média e Situação do Aluno</h3>
                     <p>Calcula a média de notas e situação escolar.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://ogslater.github.io/boletim/" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/ogslater/boletim" class="btn">Ver Código</a>
+                    </div>
                 </div>
-                <div class="project-card" data-placeholder="Cálculo de Tintas">
-                    <a href="https://ogslater.github.io/tintas/" target="_blank">
-                        <img src="images/tinta.png" alt="Cálculo de Tintas">
-                    </a>
-                    <a href="https://ogslater.github.io/tintas/" target="_blank">Cálculo de Tintas</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                    <img src="images/tinta.png" alt="Cálculo de Tintas">
+                    <h3>Cálculo de Tintas</h3>
                     <p>Estimativa de tinta necessária para pintura de paredes.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://ogslater.github.io/tintas/" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/ogslater/tintas" class="btn">Ver Código</a>
+                    </div>
                 </div>
-                <div class="project-card" data-placeholder="Projeto de Previsão do Tempo">
-                    <a href="https://ogslater.github.io/tempo/" target="_blank">
-                        <img src="images/tempo.png" alt="Projeto de Previsão do Tempo usando API">
-                    </a>
-                    <a href="https://ogslater.github.io/tempo/" target="_blank">Projeto usando API</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+                    <img src="images/tempo.png" alt="Projeto usando API">
+                    <h3>Projeto usando API</h3>
                     <p>Integração com API para previsão do tempo em tempo real.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://ogslater.github.io/tempo/" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/ogslater/tempo" class="btn">Ver Código</a>
+                    </div>
                 </div>
-                   <div class="project-card" data-placeholder="Projeto de visualização da tabela de líderes do brasileirão">
-                    <a href="https://ogslater.github.io/api-brasileirao/" target="_blank">
-                        <img src="images/brasileirao.png" alt="Projeto de visualização da tabela de líderes do brasileirão">
-                    </a>
-                    <a href="https://ogslater.github.io/api-brasileirao/" target="_blank">Projeto usando API</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
+                    <img src="images/brasileirao.png" alt="Projeto usando API">
+                    <h3>Projeto usando API</h3>
                     <p>Integração com API para visualização da tabela de líderes do brasileirão.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://ogslater.github.io/api-brasileirao/" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/ogslater/api-brasileirao" class="btn">Ver Código</a>
+                    </div>
                 </div>
-                    <div class="project-card" data-placeholder="Projeto de visualização da tabela de líderes do brasileirão">
-                    <a href="https://ogslater.github.io/api-moedas/" target="_blank">
-                        <img src="images/moedas.png" alt="Projeto de visualização da tabela de líderes do brasileirão">
-                    </a>
-                    <a href="https://ogslater.github.io/api-moedas/" target="_blank">Projeto usando API</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="700">
+                    <img src="images/moedas.png" alt="Projeto usando API">
+                    <h3>Projeto usando API</h3>
                     <p>Integração com API para visualização de conversão de moedas.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://ogslater.github.io/api-moedas/" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/ogslater/api-moedas" class="btn">Ver Código</a>
+                    </div>
                 </div>
-                <div class="project-card" data-placeholder="Integração com API para conversação com gemini">
-                    <a href="https://ogslater.github.io/api-gemini/" target="_blank">
-                        <img src="images/gemini.png" alt="Integração com API para conversação com gemini">
-                    </a>
-                    <a href="https://ogslater.github.io/api-gemini/" target="_blank">Projeto usando API</a>
+                <div class="project-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
+                    <img src="images/gemini.png" alt="Projeto usando API">
+                    <h3>Projeto usando API</h3>
                     <p>Integração com API para conversação com gemini.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://ogslater.github.io/api-gemini/" class="btn">Ver Projeto</a>
+                        <a href="https://github.com/ogslater/api-gemini" class="btn">Ver Código</a>
+                    </div>
                 </div>
-               
-                
+            </div>
         </section>
     </main>
 
     <footer>
         <p>© 2025 Igor Guterres - Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
-                

@@ -174,7 +174,6 @@ section ul {
     margin-bottom: 15px;
 }
 
-
 .project-card img:not([src]),
 .project-card img[src=""] {
     display: none;
@@ -184,7 +183,6 @@ section ul {
     transform: scale(1.08);
     box-shadow: 0 4px 12px rgba(30, 144, 255, 0.4);
 }
-
 
 .project-card::before {
     content: attr(data-placeholder, "Projeto sem preview");
@@ -199,31 +197,55 @@ section ul {
     display: block;
 }
 
-.project-card a {
-    color: #1e90ff;
-    text-decoration: none;
-    margin: 5px 0;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.3s;
+.project-card h3 {
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: #e0e0e0;
 }
 
-.project-card a:hover {
-    text-decoration: underline;
-    transform: scale(1.05);
+.project-card p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 15px;
 }
 
-.project-card button {
+.project-card .tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.project-card .tags span {
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #e0e0e0;
+    border: 1px solid #1e90ff;
+}
+
+.project-card .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.project-card .btn {
     background-color: #1e90ff;
     color: #fff;
-    border: none;
-    padding: 10px 18px;
+    padding: 10px 20px;
+    text-decoration: none;
     border-radius: 6px;
-    cursor: pointer;
-    margin: 5px;
+    font-weight: bold;
     transition: background 0.3s, transform 0.3s;
+    flex: 1;
+    text-align: center;
 }
 
-.project-card button:hover {
+.project-card .btn:hover {
     background-color: #1c7ed6;
     transform: scale(1.05);
 }
@@ -255,4 +277,3 @@ footer {
         max-height: 150px; 
     }
 }
-
